@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP - Dienstleistungen nach Maß</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>JP</h1>
+            <p> Dienstleistungen nach Maß</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class="dropdown-content">
+                        <a href="/jpdesign.html">
+                            <i class="fas fa-paint-brush"></i> JP Design
+                        </a>
+                        <a href="/luggageboy.html">
+                            <i class="fas fa-suitcase"></i> LuggageBoy
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="service left-align">
+        <div class="image-container">
+            <img src="images/jpdesign.jpg" alt="JPDesign">
+        </div>
+        <div class="text-container">
+            <h2 id="jpdesign">JPDesign</h2>
+            <p>JPDesign bietet dekorative Dienstleistungen für Veranstaltungen, insbesondere Hochzeiten. Wir bieten Deckendekoration wie Lampions oder Schirmchen an, die direkt vom Team aufgehängt werden, sowie Beleuchtung wie Lichterketten.</p>
+        </div>
+    </section>
+    <section class="service right-align">
+        <div class="text-container">
+            <h2 id="luggageboy">LuggageBoy</h2>
+            <p>LuggageBoy ist ein spezialisiertes Unternehmen für Gepäckservice, das von Hotels gebucht werden kann, um das Gepäck von Reisegruppen auf die Zimmer zu bringen.</p>
+        </div>
+        <div class="image-container">
+            <img src="images/luggageboy.jpg" alt="LuggageBoy">
+        </div>
+    </section>
+    <section id="contact" class="contact-form">
+        <h2>Kontaktieren Sie uns</h2>
+        <form class="contact-form" action="https://formspree.io/f/xldrgqrr" method="POST">
+            <label for="email">Ihre E-Mail:</label>
+            <input type="email" id="email" name="_replyto">
+            <label for="auswahl">Wählen Sie eine Option:</label>
+            <select id="auswahl" name="auswahl">
+                <option value="N/A">Service Auswählen</option>
+                <option value="JPDesign">JP Design</option>
+                <option value="LuggageBoy">LuggageBoy</option>
+            </select>
+            <label for="message">Ihre Nachricht:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Senden</button>
+        </form>        
+    </section>    
+</main>
+<footer>
+    <div class="contact-info">
+        <!-- Kontakt Info -->
+        <div class="contact-item">
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/xtnsvhie.json"
+                trigger="hover"
+                colors="primary:#ffffff"
+                style="width:40px;height:40px">
+            </lord-icon>
+            <a href="mailto:info@jogipublishing.com">info@jogipublishing.com</a>
+        </div>
+        <div class="contact-item">
+            <lord-icon
+                src="https://cdn.lordicon.com/rsvfayfn.json"
+                trigger="hover"
+                colors="primary:#ffffff"
+                style="width:40px;height:40px">
+            </lord-icon>
+            <a href="tel:+491735716540">+49 173 5716540</a>
+        </div>
+    </div>
+    <div class="social-media">
+        <a href="https://wa.me/01735716540" target="_blank" aria-label="WhatsApp">
+            <img src="images/icons/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://instagram.com/tieph0" target="_blank" aria-label="Instagram">
+            <img src="images/icons/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://facebook.com/tieph0" target="_blank" aria-label="Facebook">
+            <img src="images/icons/facebook.png" alt="Facebook">
+        </a>
+    </div>
+    <p>&copy; 2024 Jogi Publishing | Alle Rechte vorbehalten</p>
+</footer>
+</body>
+</html>

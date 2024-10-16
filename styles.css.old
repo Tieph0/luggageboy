@@ -1,0 +1,346 @@
+/* Grundstil */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+/* Header-Stile */
+header {
+    background: linear-gradient(135deg, #1f1f1f, #333);
+    color: #f5f5f5;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+.logo p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+    color: #e6e6e6;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a,
+nav ul li .dropbtn {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li .dropbtn:hover {
+    color: #f5f5f5;
+    text-decoration: underline;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.dropbtn i {
+    margin-left: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    animation: fadeIn 0.3s;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: #f5f5f5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a i {
+    margin-right: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ausfahr-Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Main-Stile */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 45%;
+}
+
+.text-container {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.411);
+    transition: box-shadow 0.3s ease;
+}
+
+.service img:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.service:nth-child(even) .image-container {
+    order: 2;
+    align-self: flex-end;
+}
+
+.service:nth-child(even) .text-container {
+    order: 1;
+    text-align: center;
+}
+
+.service:nth-child(odd) .image-container {
+    order: 1;
+    align-self: flex-start;
+}
+
+.service:nth-child(odd) .text-container {
+    order: 2;
+    text-align: center;
+}
+
+/* Kontaktformular-Stile */
+.contact-form {
+    background: #2f2f2f;
+    padding: 40px 30px;
+    color: #f5f5f5;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1em;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Verschönerung des Dropdown-Menüs */
+.contact-form select {
+    appearance: none;
+    background: #333 url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23FFF" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>') no-repeat right 10px center;
+    padding-right: 30px;
+    background-size: 10px;
+}
+
+.contact-form select option {
+    background: #444;
+    color: #fff;
+    padding: 10px;
+}
+
+.contact-form select:hover,
+.contact-form select:focus {
+    background-color: #444;
+}
+
+.contact-form select option:hover {
+    background-color: #555;
+    color: #3498db;
+}
+
+.contact-form select option:checked {
+    background-color: #555;
+    color: #3498db;
+}
+
+.contact-form button {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #2980b9;
+}
+
+/* Footer-Stile */
+footer {
+    background-color: #222;
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-item a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-item a:hover {
+    color: #3498db;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    padding: 4px 4px;
+    margin: 0 5px;
+    border-radius: 7px;
+}

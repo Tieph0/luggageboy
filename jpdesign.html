@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP - Dienstleistungen nach Maß</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>JP</h1>
+            <p> Dienstleistungen nach Maß</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jpdesign.html">JP Design</a></li>
+                <li><a href="luggageboy.html">LuggageBoy</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section>
+        <h2>Über JP Design</h2>
+        <p>JP Design bietet einen umfassenden Dekorationsdienst für Veranstaltungen, spezialisiert auf Hochzeiten. Unsere Dienstleistungen umfassen das Aufhängen von Lampions, Schirmchen und Lichterketten, um Ihre Veranstaltung unvergesslich zu machen.</p>
+        <img src="images/jpdesign_detail.jpg" alt="JP Design Detail">
+    </section>
+</main>
+<footer>
+    <div class="contact-info">
+        <!-- Lordicon-Icon für Kontakt -->
+        <lord-icon
+            src="https://cdn.lordicon.com/xtnsvhie.json"
+            trigger="hover"
+            style="width:40px; height:40px; margin-right: 10px;">
+        </lord-icon>
+        <a href="mailto:info@jogipublishing.com">info@jogipublishing.com</a>
+    </div>
+    <div class="contact-info">
+        <lord-icon
+            src="https://cdn.lordicon.com/rsvfayfn.json"
+            trigger="hover"
+            style="width:40px; height:40px; margin-right: 10px;">
+        </lord-icon>
+        <a href="tel:+491735716540">+49 173 5716540</a>
+    </div>
+    <div class="social-media">
+        <a href="https://wa.me/01735716540" target="_blank" aria-label="WhatsApp">
+            <img src="images/icons/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://instagram.com/tieph0" target="_blank" aria-label="Instagram">
+            <img src="images/icons/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://facebook.com/tieph0" target="_blank" aria-label="Facebook">
+            <img src="images/icons/facebook.png" alt="Facebook">
+        </a>
+    </div>
+    <p>&copy; 2024 Jogi Publishing | Alle Rechte vorbehalten</p>
+</footer>
+</body>
+</html>
